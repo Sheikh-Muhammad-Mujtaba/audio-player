@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Audio Player Application
 
-## Getting Started
+This is a fully-featured Audio Player application built using **React** and **Next.js**. The app allows users to upload and play audio files, view metadata like title and artist, and manage a playlist. It also supports dynamic album art display when available.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## **Features**
+- **Audio Upload:** Users can upload multiple audio files.
+- **Metadata Extraction:** Automatically extracts metadata (title, artist, album art) using `music-metadata-browser`.
+- **Dynamic Album Art:** Displays the album cover if available; otherwise, uses a default image.
+- **Playback Controls:**
+  - Play/Pause audio
+  - Skip to the next or previous track
+- **Volume Control:** Adjustable volume slider.
+- **Progress Bar:** Interactive progress bar to seek through the track.
+- **Playlist Management:** Displays uploaded tracks and allows switching between them.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## **Technologies Used**
+- **React:** For building the user interface
+- **Next.js:** Framework for server-side rendering and optimized build
+- **TypeScript:** For type safety and better development experience
+- **Tailwind CSS:** For styling the UI
+- **music-metadata-browser:** To extract audio metadata from uploaded files
+- **Lucide Icons:** For consistent and visually appealing icons
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## **Getting Started**
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sheikh-Muhammad-Mujtaba/
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Navigate to the project directory:
+   ```bash
+   cd audio-player
+   ```
 
-## Deploy on Vercel
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Open your browser and go to:
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+
+## **Usage**
+
+### Uploading Audio Files
+1. Click the **Upload** button to select audio files from your device.
+2. Supported audio formats: `mp3`, `wav`, and other common formats.
+
+### Controls
+- **Play/Pause:** Toggle playback of the current track.
+- **Skip Forward/Backward:** Navigate between tracks in the playlist.
+- **Progress Bar:** Drag the slider to seek to a specific part of the track.
+- **Volume Slider:** Adjust the playback volume.
+
+### Playlist Management
+- Uploaded tracks will appear in the playlist.
+- Click on a track to play it.
